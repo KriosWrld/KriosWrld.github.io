@@ -8,7 +8,7 @@
         <h1 class="ss"> KriosWrld </h1></br>
     </div>
 
-      <a class="btn" href="http://www.seznam.cz" >button</a>
+      <a class="btn" href="test.html" >button</a>
       
 
 
@@ -20,7 +20,7 @@
 
 </body> 
 <style>
-  .html{
+  html{
     height: 100vh;
     display: flex;
   align-items: center;
@@ -43,11 +43,10 @@
   font-family: arial;
   text-decoration: none;
   background: #222;
-  height: 50px;
-  min-width: 100px;
+  width: 300px; height: 80px; border: 1px solid #000; margin: auto;
   border: none;
   border-radius: 10px;
-  color: #eee;
+  color: rgb(255, 255, 255);
   font-size: 40px;
   display: flex;
   text-align: center;
