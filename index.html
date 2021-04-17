@@ -1,27 +1,39 @@
 <html>
 <head>
-
+<title> KriosWrld </title>
 
 </head>
 <body>
-    <div>
-        <h1 class="ss"> KriosWrld </h1></br>
+  <div>
+  <ul>
+    <li><a href="www.google.com">A-team</a></li>
+    <li><a href="www.google.com">News</a></li>
+    <li><a href="www.google.com">Info</a></li>
+    </ul>
+    </div>
+  <div class="sf">
+        <h1 class="ss"> KriosWrld </h1>
+        <p class="se"> Minecraft server </p>
     </div>
 
-      <a class="btn" href="test.html" >button</a>
-      
+      <!--<a class="btn" href="test.html" > Info </a>-->
 
-
-
-
-      
-
-
+      <div class="dropdown">
+      <button class="dropbtn"> Více </button>
+      <div class="dropdown-content">
+      <a href="info.html"> Info </a>
+      <a href="#"> A-team </a>
+      <a href="#"> Novinky </a>
+      </div>
+    </div>
 
 </body> 
+
+
+
 <style>
   html{
-    height: 100vh;
+    height: 50vh;
     display: flex;
   align-items: center;
   justify-content: center;
@@ -29,15 +41,30 @@
     body {
   background-image: url("background.png");
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
 .ss{
     font-size: 100px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /*color*/
     color:rgb(29, 84, 129);
-    text-shadow: 2px 2px #1a181880;
-    /*align*/
-    padding: 70px 0;
+    text-shadow: 2px 2px #1a181880;  
+}
+.sf{
+  /*align*/
+  padding: 50px 0;
   text-align: center;
+}
+.se{
+  font-family: 'Trebuchet MS';
+  font-size: 20px;
 }
 .btn{
   font-family: arial;
@@ -56,13 +83,72 @@
   padding-top: 5px;
     
 }
-.btn:hover {
-  background: rgba(34, 34, 34, 0.61);
-}
 
-.subtitle{
- 
-  text-align: center;
-}
 </style>
+
+
+
+
+<style>
+  .dropbtn {
+    font-size: 50px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    /*align*/
+    width: 300px; height: 80px; margin: auto;
+    border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  padding-top: 5px;
+  justify-content: center;
+  }
+  
+  .dropdown {
+    width: 300px; height: 80px; margin: auto;
+    position: relative;
+    text-align: center;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .dropdown-content {
+    
+    text-align: center;
+  align-items: center;
+  justify-content: center;
+    display: none;
+    position: absolute;
+    background: rgba(34, 34, 34, 0.616);
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(196, 196, 196);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .dropdown-content a:hover {background-color: #0000001a}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #111111ad;
+  }
+  </style>
 </html>
